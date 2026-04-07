@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FormGuard — All-in-One Form Manager for Google Forms™</title>
-    <meta name="description" content="FormGuard: The all-in-one Google Forms add-on. Form Limiter, Choice Eliminator, Notifications & Timer in a single tool.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <title>FormGuard - All-in-One Form Manager for Google Forms</title>
+    <meta name="description" content="FormGuard combines form limits, choice elimination, notifications, and scheduling in one Google Forms management add-on.">
+    <link rel="canonical" href="https://formsuite.dev/formguard/">
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FormGuard - All-in-One Form Manager for Google Forms">
+    <meta property="og:description" content="Manage Google Forms with response limits, choice elimination, notifications, and schedule controls in one add-on.">
+    <meta property="og:url" content="https://formsuite.dev/formguard/">
+    <meta property="og:image" content="https://formsuite.dev/formguard/icon.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FormGuard - All-in-One Form Manager for Google Forms">
+    <meta name="twitter:description" content="Manage Google Forms with response limits, choice elimination, notifications, and schedule controls in one add-on.">
+    <meta name="twitter:image" content="https://formsuite.dev/formguard/icon.png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -85,10 +95,6 @@
             text-align: center;
             padding: 24px 16px;
         }
-        .feature-icon {
-            font-size: 36px;
-            margin-bottom: 12px;
-        }
         .feature h3 {
             font-size: 16px;
             font-weight: 600;
@@ -157,7 +163,7 @@
             color: #555;
         }
         .plan ul li::before {
-            content: "✓ ";
+            content: "OK ";
             color: #34a853;
             font-weight: 700;
         }
@@ -190,7 +196,7 @@
 </head>
 <body>
     <nav>
-        <a href="/" class="logo">🛡️ Form<span>Guard</span></a>
+        <a href="/" class="logo">Form<span>Guard</span></a>
         <div class="nav-links">
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
@@ -199,92 +205,62 @@
     </nav>
 
     <div class="hero">
-        <h1>All-in-One <span>Google Forms™</span> Manager</h1>
-        <p>Response limits, choice elimination, notifications, and scheduled closures — everything you need in a single add-on.</p>
+        <h1>All-in-One <span>Google Forms</span> Manager</h1>
+        <p>Response limits, choice elimination, notifications, and scheduled closures in a single add-on.</p>
         <a href="support.html" class="cta-btn">Marketplace Review in Progress</a>
     </div>
 
     <div class="features" id="features">
         <div class="feature">
-            <div class="feature-icon">🔒</div>
             <h3>Form Limiter</h3>
             <p>Automatically close forms after reaching a response limit or at a scheduled time.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">🗑️</div>
             <h3>Choice Eliminator</h3>
-            <p>Remove selected choices from dropdowns and multiple-choice questions after they're picked.</p>
+            <p>Remove selected choices from dropdowns and multiple-choice questions after they are picked.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">📧</div>
             <h3>Notifications</h3>
-            <p>Get email alerts on new responses, approaching limits, or when your form closes.</p>
+            <p>Send email alerts when your form opens, closes, or reaches configured milestones.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">⏱️</div>
-            <h3>Timer</h3>
-            <p>Schedule forms to open and close automatically at specific dates and times.</p>
+            <h3>Scheduler</h3>
+            <p>Open and close forms automatically so collection windows stay aligned with your workflow.</p>
         </div>
     </div>
 
     <div class="pricing" id="pricing">
-        <h2>Simple Pricing</h2>
+        <h2>Pricing</h2>
         <div class="pricing-grid">
             <div class="plan">
                 <h3>Free</h3>
                 <div class="price">$0</div>
-                <div class="price-sub">forever</div>
+                <div class="price-sub">per year</div>
                 <ul>
-                    <li>Up to 3 forms</li>
-                    <li>100 response limit per form</li>
-                    <li>Basic email notifications</li>
-                    <li>Choice eliminator</li>
-                    <li>Community support</li>
+                    <li>Form limits</li>
+                    <li>Basic notifications</li>
+                    <li>Core workflow tools</li>
                 </ul>
             </div>
             <div class="plan featured">
-                <span class="badge">Most Popular</span>
+                <div class="badge">Current plan</div>
                 <h3>Pro</h3>
                 <div class="price">$29</div>
                 <div class="price-sub">per year</div>
                 <ul>
-                    <li>Unlimited forms</li>
-                    <li>Unlimited response limits</li>
-                    <li>Custom email templates</li>
-                    <li>Multiple notification recipients</li>
-                    <li>Scheduled open/close</li>
-                    <li>Priority email support</li>
-                </ul>
-            </div>
-            <div class="plan">
-                <h3>Lifetime</h3>
-                <div class="price">$79</div>
-                <div class="price-sub">one-time payment</div>
-                <ul>
-                    <li>Everything in Pro</li>
-                    <li>All future updates included</li>
-                    <li>Priority email support</li>
-                    <li>Pay once, use forever</li>
+                    <li>Choice elimination</li>
+                    <li>Advanced scheduling</li>
+                    <li>Priority support</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div style="max-width:720px;margin:40px auto;padding:0 24px;">
-        <h2 style="font-size:18px;font-weight:600;margin-bottom:12px;">Developer Information</h2>
-        <p style="font-size:14px;color:#555;"><strong>Developer:</strong> lidaban2025</p>
-        <p style="font-size:14px;color:#555;"><strong>Contact:</strong> <a href="mailto:lidaban2025@gmail.com">lidaban2025@gmail.com</a></p>
-        <p style="font-size:14px;color:#555;"><strong>Support:</strong> <a href="support.html">Support Page</a></p>
-    </div>
-
     <footer>
-        <p>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-            <a href="support.html">Support</a>
-        </p>
-        <p style="margin-top: 12px; font-size: 11px; color: #bbb;">Google Forms™ is a trademark of Google LLC. FormGuard is not affiliated with, sponsored by, or endorsed by Google LLC.</p>
-        <p style="margin-top: 8px;">&copy; 2026 FormGuard. All rights reserved.</p>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <p style="margin-top: 16px;">&copy; 2026 FormGuard. All rights reserved.</p>
     </footer>
 </body>
 </html>
