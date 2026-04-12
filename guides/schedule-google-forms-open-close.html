@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Google Forms to Open and Close Automatically</title>
+    <meta name="description" content="Schedule Google Forms close and reopen times with FormGuard so intake windows, applications, and event signups do not need manual monitoring.">
+    <link rel="canonical" href="https://formsuite.dev/formguard/guides/schedule-google-forms-open-close.html">
+    <link rel="icon" type="image/png" href="../icon.png">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Schedule Google Forms to Open and Close Automatically">
+    <meta property="og:description" content="Run time-boxed Google Forms collection windows with scheduled close and reopen controls.">
+    <meta property="og:url" content="https://formsuite.dev/formguard/guides/schedule-google-forms-open-close.html">
+    <meta property="og:image" content="https://formsuite.dev/formguard/icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.7; color: #333; background: #fff; }
+        nav { background: #fff; border-bottom: 1px solid #e8e8e8; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; max-width: 1080px; margin: 0 auto; }
+        .logo { font-size: 20px; font-weight: 700; color: #1a1a1a; text-decoration: none; }
+        .logo span { color: #4285f4; }
+        .nav-links a { color: #555; text-decoration: none; margin-left: 24px; font-size: 14px; font-weight: 500; }
+        .container { max-width: 780px; margin: 0 auto; padding: 48px 24px; }
+        h1 { font-size: 34px; line-height: 1.2; margin-bottom: 16px; color: #1a1a1a; }
+        h2 { font-size: 22px; margin-top: 34px; margin-bottom: 12px; color: #1a1a1a; }
+        p, li { font-size: 16px; margin-bottom: 12px; }
+        ul, ol { padding-left: 24px; margin-bottom: 16px; }
+        a { color: #4285f4; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .note { background: #f8f9fa; border-left: 4px solid #fbbc04; padding: 16px; margin: 24px 0; }
+        .cta { display: inline-block; background: #4285f4; color: #fff; padding: 12px 22px; border-radius: 8px; font-weight: 600; margin-top: 8px; }
+        .cta:hover { background: #3367d6; text-decoration: none; }
+        footer { text-align: center; padding: 32px 24px; border-top: 1px solid #e8e8e8; font-size: 13px; color: #999; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">Form<span>Guard</span></a>
+        <div class="nav-links">
+            <a href="../index.html#features">Features</a>
+            <a href="../support.html">Support</a>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>Schedule Google Forms to Open and Close Automatically</h1>
+        <p>Some Google Forms should only collect responses during a specific window: applications, event signups, daily intake forms, office-hour requests, or limited-time surveys.</p>
+
+        <h2>Use scheduled form controls when</h2>
+        <ul>
+            <li>A request window starts at a known time.</li>
+            <li>A form should close after a deadline.</li>
+            <li>You want to reopen a form after reviewing or resetting the workflow.</li>
+            <li>The same form link or QR code should stay available for later windows.</li>
+        </ul>
+
+        <h2>Set a close or reopen time</h2>
+        <ol>
+            <li>Open your Google Form.</li>
+            <li>Open FormGuard from the add-ons menu.</li>
+            <li>Turn on <strong>Timer</strong>.</li>
+            <li>Choose a close time, a reopen time, or both.</li>
+            <li>Save settings.</li>
+        </ol>
+
+        <div class="note">
+            Google Apps Script time triggers are not second-level schedulers. Timer actions usually run within a few minutes of the scheduled time, depending on Google's trigger scheduling.
+        </div>
+
+        <h2>Combine timers with limits</h2>
+        <p>Scheduled open and close windows can run with a response limit. The form closes when the earliest configured condition is met, such as reaching capacity or passing the deadline.</p>
+
+        <h2>Best fit</h2>
+        <p>Use this for operational control, not for high-stakes second-level timing. For most classes, events, signups, and intake windows, a few minutes of scheduling variance is usually acceptable.</p>
+
+        <p>FormGuard is free of charge during public launch.</p>
+        <a class="cta" href="https://workspace.google.com/marketplace/app/formguard_google_forms_allinone/410120194423">Install from Marketplace</a>
+    </main>
+    <footer>
+        <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="../support.html">Support</a>
+    </footer>
+</body>
+</html>

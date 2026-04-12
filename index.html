@@ -167,6 +167,46 @@
             color: #34a853;
             font-weight: 700;
         }
+        .guides {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 24px 60px;
+        }
+        .guides h2 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 28px;
+        }
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+        }
+        .guide-link {
+            display: block;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            background: #fff;
+        }
+        .guide-link:hover {
+            border-color: #4285f4;
+            text-decoration: none;
+        }
+        .guide-link strong {
+            display: block;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        .guide-link span {
+            display: block;
+            color: #666;
+            font-size: 14px;
+        }
         .badge {
             display: inline-block;
             background: #4285f4;
@@ -199,6 +239,7 @@
         <a href="/" class="logo">Form<span>Guard</span></a>
         <div class="nav-links">
             <a href="#features">Features</a>
+            <a href="#guides">Guides</a>
             <a href="#launch">Launch</a>
             <a href="support.html">Support</a>
         </div>
@@ -226,6 +267,24 @@
         <div class="feature">
             <h3>Scheduler</h3>
             <p>Open and close forms automatically so collection windows stay aligned with your workflow.</p>
+        </div>
+    </div>
+
+    <div class="guides" id="guides">
+        <h2>Google Forms Guides</h2>
+        <div class="guide-grid">
+            <a class="guide-link" href="guides/limit-google-forms-responses.html">
+                <strong>How to limit Google Forms responses</strong>
+                <span>Set a response cap, close the form automatically, and avoid overflow confusion.</span>
+            </a>
+            <a class="guide-link" href="guides/google-forms-choice-limiter.html">
+                <strong>Google Forms choice limiter</strong>
+                <span>Use choice quotas for appointment slots, sessions, inventory, and signup options.</span>
+            </a>
+            <a class="guide-link" href="guides/schedule-google-forms-open-close.html">
+                <strong>Schedule Google Forms open and close times</strong>
+                <span>Run time-boxed intake windows without watching the form manually.</span>
+            </a>
         </div>
     </div>
 
