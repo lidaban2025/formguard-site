@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - FormGuard</title>
     <meta name="description" content="FormGuard Privacy Policy. Learn how we handle your data.">
-    <link rel="canonical" href="https://formsuite.dev/formguard/privacy.html">
+    <link rel="canonical" href="https://formsuite.dev/formguard-site/privacy.html">
     <link rel="icon" type="image/png" href="icon.png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -109,35 +109,36 @@
 
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">FormGuard | All-in-One Form Manager for Google Forms | Last updated: March 18, 2026</p>
+        <p class="subtitle">FormGuard | Google Forms response limits and choice quotas | Last updated: October 11, 2026</p>
 
         <h2>1. What is FormGuard?</h2>
-        <p>FormGuard is a Google Forms Editor Add-on that helps form owners manage response limits, choice elimination, email notifications, and scheduled form closures, all from a single tool.</p>
+        <p>FormGuard is a Google Forms Editor Add-on that helps form owners manage response limits, choice quotas, optional owner notifications, and scheduled close/reopen where the paid build is available.</p>
 
         <h2>2. Data We Access</h2>
         <p>FormGuard accesses only the data necessary to provide its features:</p>
         <ul>
-            <li><strong>Google Forms data</strong> - form title, response count, form settings, and form items (questions/choices) within the form you install the add-on on.</li>
-            <li><strong>Your email address</strong> - used solely to send you notification emails (e.g., when a response limit is reached).</li>
+            <li><strong>Google Forms data</strong> for forms you explicitly configure: form title, settings, questions, choices, response counts, and responses needed to enforce configured quotas. Scheduled tasks reopen a configured form by its saved ID when no editor is active.</li>
+            <li><strong>Your email address</strong> for optional notifications and to bind a personal paid license to the purchasing Google account.</li>
+            <li><strong>Purchase and license data</strong> when you choose a paid plan: buyer email, product, transaction reference, plan, and expiry. Creem processes checkout and payment information.</li>
         </ul>
-        <p>FormGuard operates under the <code>forms.currentonly</code> scope, meaning it can only access the specific form where you have installed and authorized the add-on. It cannot access your other Google Forms or any other Google services.</p>
+        <p>The updated scheduled-task build requests the full Google Forms scope because a background job has no active editor and must reopen the form you configured by ID. It does not enumerate unrelated forms. Earlier builds also used <code>forms.currentonly</code> for editor-bound access. Google permissions remain subject to verification for the updated build.</p>
 
         <h2>3. Data Storage</h2>
-        <p>All configuration and settings are stored exclusively using Google's built-in <strong>Properties Service</strong> (document-bound and user-bound properties). This means:</p>
+        <p>Form configuration is stored in Google Apps Script document, user, and script properties. Scheduled jobs retain the configured form ID, timing, and notification settings. Paid access also uses an HTTPS status check:</p>
         <ul>
-            <li>Your data stays within Google's infrastructure.</li>
-            <li>No data is transmitted to or stored on any external servers.</li>
-            <li>No databases, analytics platforms, or third-party services receive your data.</li>
+            <li>The license check sends only the signed license key, current Google account email, and FormGuard product identifier to FormSuite's license service. It does not send form IDs, questions, choices, responses, or spreadsheet contents.</li>
+            <li>Confirmed license status may be cached for 15 minutes. Previously confirmed access has at most 24 hours of outage grace; initial activation and already-revoked access have no outage grace.</li>
+            <li>Creem and FormSuite process purchase and license records separately from form contents.</li>
         </ul>
 
         <h2>4. Data Sharing</h2>
-        <p>We do <strong>not</strong> sell, rent, trade, or share your personal data or form data with any third parties. Period.</p>
+        <p>We do not sell form responses. Form automation runs in Google services. Optional notifications go to the address you configure. Paid checkout shares purchase information with Creem; FormSuite's license service uses purchase and buyer-email data to issue an account-bound key and check entitlement. Form responses are not sent to Creem or the license service.</p>
 
         <h2>5. Data Retention</h2>
-        <p>FormGuard stores settings only while the add-on is active on your form. If you uninstall the add-on, the document-bound properties associated with that form are no longer used. You may also clear settings from within the add-on interface at any time.</p>
+        <p>Saved settings can remain in Apps Script storage until removed. Disable scheduled rules and save before uninstalling to remove the associated timer jobs. Uninstalling alone does not confirm deletion of every stored setting or trigger. Contact support for workflow or license-record removal; transaction records may need to be retained for payment and accounting requirements.</p>
 
         <h2>6. Security</h2>
-        <p>Since all data is stored within Google's own services, it is protected by Google's security infrastructure. FormGuard does not introduce any additional data transmission or storage vectors.</p>
+        <p>Google provides authentication, form storage, and Apps Script execution. License checks use HTTPS and do not transfer form content to our payment or licensing systems.</p>
 
         <h2>7. Children's Privacy</h2>
         <p>FormGuard does not knowingly collect personal information from children under 13. The add-on is intended for use by Google Forms owners and administrators.</p>
