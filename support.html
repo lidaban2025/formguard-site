@@ -183,32 +183,32 @@
 
             <div class="faq-item">
                 <h3>Why can't FormGuard access my other forms?</h3>
-                <p>By design. FormGuard uses the <code>forms.currentonly</code> scope, which means it can only access the specific form where you installed it. This is a privacy and security feature, not a bug.</p>
+                <p>The updated scheduled-task build requests full Forms permission because a background job has no active editor and must reopen the form you configured by ID. It does not enumerate unrelated forms. If Google asks for new permission, complete the Google authorization flow and then save again.</p>
             </div>
 
             <div class="faq-item">
                 <h3>My form didn't close at the exact time I set. Why?</h3>
-                <p>FormGuard uses Google Apps Script time-driven triggers, which may have a delay of up to a few minutes. This is a limitation of Google's platform, not FormGuard. For critical deadlines, we recommend setting the close time a few minutes early.</p>
+                <p>The updated Pro timer uses Google Apps Script time-driven triggers, which can run later than the exact time selected. Test a copied form first and allow a buffer for critical deadlines.</p>
             </div>
 
             <div class="faq-item">
                 <h3>Is billing enabled?</h3>
-                <p>No. FormGuard is currently available in launch mode while real-world usage is validated. Paid plans may be introduced later.</p>
+                <p>Free installation remains available. The updated personal Pro build is in staged testing and Google review preparation: $29 paid once for 12 months, without automatic renewal. Confirm access to the paid build with support before buying. See the <a href="https://formsuite.dev/formguard/support.html#paid-access">activation guide</a>.</p>
             </div>
 
             <div class="faq-item">
                 <h3>Can I get a refund?</h3>
-                <p>Billing is not enabled right now, so there are no FormGuard purchases to refund. If paid plans are introduced later, refund terms will be published before checkout is enabled.</p>
+                <p>Creem handles payment and refund requests. A confirmed full refund revokes the paid license for that order; partial refunds are reviewed separately. Contact us with the order reference. Avoid sharing a full license key or card details in support messages.</p>
             </div>
 
             <div class="faq-item">
                 <h3>How do I uninstall FormGuard?</h3>
-                <p>Go to <strong>Extensions &rarr; Add-ons &rarr; Manage add-ons</strong> in your Google Form. Find FormGuard and click the three-dot menu &rarr; <strong>Remove</strong>. All settings associated with that form will be cleared.</p>
+                <p>Disable scheduled rules and save before uninstalling. Then use <strong>Extensions &rarr; Add-ons &rarr; Manage add-ons</strong> to remove FormGuard. Uninstalling alone does not prove that every stored property or trigger was deleted; contact support if you need help checking older rules.</p>
             </div>
 
             <div class="faq-item">
                 <h3>Is my data safe?</h3>
-                <p>Absolutely. FormGuard stores all data within Google's own infrastructure (Properties Service). No data ever leaves Google's servers. Read our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+                <p>Form questions and responses are handled within Google services and are not sent to Creem or FormSuite's license service. The updated paid build sends an account email, signed license key, and product identifier over HTTPS for activation and access checks. Read our <a href="privacy.html">Privacy Policy</a> for details.</p>
             </div>
 
             <div class="faq-item">
